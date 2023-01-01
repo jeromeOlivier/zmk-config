@@ -42,7 +42,7 @@
             &kp GRAVE       &none           &none        &none        &none            &none            &none            &kp UNDER        &kp LBRC     &kp RBRC       &kp KP_PLUS      &kp DELETE
             &kp TAB         &kp LALT        &kp LCTRL    &kp LGUI     &kp LSHIFT       &none            &none            &kp KP_EQUAL     &kp LBKT     &kp RBKT       &kp COLON        &kp DQT
             &kp CAPS        &none           &none        &none        &none            &none            &none            &kp KP_MINUS     &kp LT       &kp GT         &kp QMARK        &kp PIPE
-            &kp LC(LEFT)    &kp LC(RIGHT)   &kp LC(UP)   &none        &trans           &trans           &kp SPACE        &kp SPACE        &none        &kp C_BRI_DN   &kp C_BRI_UP     &none
+            &kp LC(LEFT)    &kp LC(RIGHT)   &kp LC(UP)   &none        &trans           &trans           &kp RET          &kp RET          &none        &kp C_BRI_DN   &kp C_BRI_UP     &none
                 >;
         };
         FUNC { bindings = <
@@ -50,7 +50,7 @@
             &kp GRAVE       &kp F1          &kp F2       &kp F3       &kp F4           &kp F5           &none            &none            &none        &none          &none            &kp DELETE
             &kp TAB         &kp F6          &kp F7       &kp F8       &kp F9           &kp F10          &none            &kp RSHIFT       &kp RGUI     &kp RCTRL      &kp RALT         &none
             &kp CAPS        &kp F11         &kp F12      &kp F13      &kp F14          &kp F15          &none            &none            &none        &none          &none            &none
-            &kp LC(LEFT)    &kp LC(RIGHT)   &kp LC(UP)   &none        &none            &none            &trans           &trans           &none        &none          &none            &none
+            &kp LC(LEFT)    &kp LC(RIGHT)   &kp LC(UP)   &none        &kp TAB          &kp TAB          &trans           &trans           &none        &none          &none            &none
                 >;
         };
         NAVR { bindings = <
@@ -58,7 +58,7 @@
             &kp GRAVE       &none           &none        &none        &none            &none            &none            &none            &kp UP       &none          &none            &kp DELETE
             &kp TAB         &kp LALT        &kp LCTRL    &kp LGUI     &kp LSHIFT       &none            &kp LPAR         &kp LEFT         &kp DOWN     &kp RIGHT      &none            &none
             &kp CAPS        &none           &none        &none        &none            &none            &kp RPAR         &kp LG(X)        &kp LG(C)    &kp LG(V)      &none            &none
-            &kp LC(LEFT)    &kp LC(RIGHT)   &kp LC(UP)   &trans       &kp SPACE        &kp SPACE        &kp RET          &kp RET          &none        &none          &none            &none
+            &kp LC(LEFT)    &kp LC(RIGHT)   &kp LC(UP)   &trans       &none            &none            &none            &none            &none        &none          &none            &none
                 >;
         };
         NAVL { bindings = <
@@ -66,7 +66,7 @@
             &kp GRAVE       &none           &none        &kp UP       &none            &none            &none            &none            &none        &none          &none            &kp DELETE
             &kp TAB         &none           &kp LEFT     &kp DOWN     &kp RIGHT        &none            &none            &kp RSHIFT       &kp RGUI     &kp RCTRL      &kp RALT         &none
             &kp CAPS        &none           &kp LG(X)    &kp LG(C)    &kp LG(V)        &none            &none            &none            &none        &none          &none            &none
-            &kp LC(LEFT)    &kp LC(RIGHT)   &kp LC(UP)   &none        &kp TAB          &kp TAB          &none            &none            &trans       &none          &none            &none
+            &kp LC(LEFT)    &kp LC(RIGHT)   &kp LC(UP)   &none        &none            &none            &none            &none            &trans       &none          &none            &none
                 >;
         };
     };
