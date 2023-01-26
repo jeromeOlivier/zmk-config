@@ -57,7 +57,7 @@
             &kp ESC         &kp N1          &kp N2        &kp N3         &kp N4           &kp N5           &kp N6           &kp N7           &kp N8       &kp N9         &kp N0           &kp BACKSPACE
             &kp GRAVE       &none           &none         &none          &none            &none            &none            &none            &kp UP       &none          &none            &kp DELETE
             &kp TAB         &kp LALT        &kp LCTRL     &kp LGUI       &kp LSHIFT       &none            &kp LPAR         &kp LEFT         &kp DOWN     &kp RIGHT      &none            &none
-            &kp CAPS        &none           &none         &none          &none            &none            &kp RPAR         &kp LG(X)        &kp LG(C)    &kp LG(V)      &none            &none
+            &kp CAPS        &none           &none         &none          &none            &none            &kp RPAR         &kp LC(LEFT)     &kp LC(UP)   &kp LC(RIGHT)  &none            &none
             &none           &none           &none         &trans         &none            &none            &kp RET          &kp RET          &none        &none          &none            &none
                 >;
         };
@@ -65,7 +65,7 @@
             &kp ESC         &kp N1          &kp N2        &kp N3         &kp N4           &kp N5           &kp N6           &kp N7           &kp N8       &kp N9         &kp N0           &kp BACKSPACE
             &kp GRAVE       &none           &none         &kp UP         &none            &none            &none            &none            &none        &none          &none            &kp DELETE
             &kp TAB         &none           &kp LEFT      &kp DOWN       &kp RIGHT        &none            &none            &kp RSHIFT       &kp RGUI     &kp RCTRL      &kp RALT         &none
-            &kp CAPS        &none           &kp LC(LEFT)  &kp LC(RIGHT)  &kp LC(UP)       &none            &none            &none            &none        &none          &none            &none
+            &kp CAPS        &none           &kp LC(LEFT)  &kp LC(UP)     &kp LC(RIGHT)    &none            &none            &none            &none        &none          &none            &none
             &none           &none           &none         &none          &kp TAB          &kp TAB          &none            &none            &trans       &none          &none            &none
                 >;
         };
