@@ -66,7 +66,7 @@
             &kp GRAVE       &none           &none         &kp UP         &none            &none            &none            &none            &none        &none          &none            &kp DELETE
             &kp TAB         &none           &kp LEFT      &kp DOWN       &kp RIGHT        &none            &none            &kp RSHIFT       &kp RGUI     &kp RCTRL      &kp RALT         &none
             &kp CAPS        &none           &kp LC(LEFT)  &kp LC(UP)     &kp LC(RIGHT)    &none            &none            &none            &none        &none          &none            &none
-            &none           &none           &none         &none          &kp TAB          &kp TAB          &none            &none            &trans       &none          &none            &none
+            &kp C_PREV      &kp C_NEXT      &kp C_PP      &none          &kp TAB          &kp TAB          &none            &none            &trans       &none          &none            &none
                 >;
         };
     };
