@@ -42,7 +42,7 @@
             &kp GRAVE       &none           &none         &none          &none            &none            &none            &kp UNDER        &kp LBRC     &kp RBRC       &kp KP_PLUS      &kp DELETE
             &kp TAB         &kp LALT        &kp LCTRL     &kp LGUI       &kp LSHIFT       &none            &none            &kp KP_EQUAL     &kp LBKT     &kp RBKT       &kp COLON        &kp DQT
             &kp CAPS        &none           &none         &none          &none            &none            &none            &kp KP_MINUS     &kp LT       &kp GT         &kp QMARK        &kp PIPE
-            &none           &none           &none         &none          &trans           &trans           &none            &none            &none        &kp C_BRI_DN   &kp C_BRI_UP     &none
+            &none           &none           &none         &none          &trans           &trans           &kp SPACE        &kp SPACE        &none        &kp C_BRI_DN   &kp C_BRI_UP     &none
                 >;
         };
         FUNC { bindings = <
