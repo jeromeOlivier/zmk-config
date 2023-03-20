@@ -43,7 +43,7 @@
             &kp ESC         &kp EXCL        &kp AT        &kp HASH       &kp DOLLAR       &kp PERCENT      &kp CARET        &kp AMPS         &kp LPAR     &kp RPAR       &kp STAR         &kp BACKSPACE
             &kp GRAVE       &none           &none         &none          &none            &none            &none            &kp UNDER        &kp LBRC     &kp RBRC       &kp KP_PLUS      &kp DELETE
             &kp CAPS        &kp LALT        &kp LCTRL     &kp LGUI       &kp LSHIFT       &none            &none            &kp KP_EQUAL     &kp LBKT     &kp RBKT       &kp COLON        &kp DQT
-            &sq LSHIFT      &none           &none         &none          &none            &none            &none            &kp KP_MINUS     &kp LT       &kp GT         &kp QMARK        &kp PIPE
+            &none           &none           &none         &none          &none            &none            &none            &kp KP_MINUS     &kp LT       &kp GT         &kp QMARK        &kp PIPE
             &none           &none           &none         &none          &trans           &trans           &none            &none            &kp RET      &none          &kp C_BRI_DN     &kp C_BRI_UP
                 >;
         };
@@ -51,7 +51,7 @@
             &kp ESC         &kp EXCL        &kp AT        &kp HASH       &kp DOLLAR       &kp PERCENT      &kp CARET        &kp AMPS         &kp LPAR     &kp RPAR       &kp STAR         &kp BACKSPACE
             &kp GRAVE       &kp F1          &kp F2        &kp F3         &kp F4           &kp F5           &none            &none            &none        &none          &none            &kp DELETE
             &kp CAPS        &kp F6          &kp F7        &kp F8         &kp F9           &kp F10          &none            &kp RSHIFT       &kp RGUI     &kp RCTRL      &kp RALT         &none
-            &sq LSHIFT      &kp F11         &kp F12       &kp F13        &kp F14          &kp F15          &none            &none            &none        &none          &none            &none
+            &none           &kp F11         &kp F12       &kp F13        &kp F14          &kp F15          &none            &none            &none        &none          &none            &none
             &none           &none           &none         &none          &none            &none            &trans           &trans           &none        &none          &none            &none
                 >;
         };
@@ -59,7 +59,7 @@
             &kp ESC         &none           &none         &none          &none            &none            &none            &none            &none        &none          &none            &none
             &kp GRAVE       &none           &none         &none          &none            &none            &none            &none            &kp UP       &none          &none            &none
             &kp CAPS        &kp LALT        &kp LCTRL     &kp LGUI       &kp LSHIFT       &none            &kp LPAR         &kp LEFT         &kp DOWN     &kp RIGHT      &none            &none
-            &sq LSHIFT      &none           &none         &none          &none            &none            &kp RPAR         &kp LC(LEFT)     &kp LC(UP)   &kp LC(RIGHT)  &none            &none
+            &none           &none           &none         &none          &none            &none            &kp RPAR         &kp LC(LEFT)     &kp LC(UP)   &kp LC(RIGHT)  &none            &none
             &none           &none           &none         &trans         &none            &none            &none            &none            &none        &none          &none            &none
                 >;
         };
@@ -67,7 +67,7 @@
             &kp ESC         &none           &none         &none          &none            &none            &none            &none            &none        &none          &none            &bootloader
             &kp GRAVE       &none           &none         &kp UP         &none            &none            &none            &none            &none        &none          &none            &none
             &kp CAPS        &none           &kp LEFT      &kp DOWN       &kp RIGHT        &none            &none            &kp RSHIFT       &kp RGUI     &kp RCTRL      &kp RALT         &none
-            &sq LSHIFT      &none           &kp LC(LEFT)  &kp LC(UP)     &kp LC(RIGHT)    &none            &none            &none            &none        &none          &none            &none
+            &none           &none           &kp LC(LEFT)  &kp LC(UP)     &kp LC(RIGHT)    &none            &none            &none            &none        &none          &none            &none
             &none           &none           &none         &none          &none            &none            &none            &none            &trans       &none          &none            &none
                 >;
         };
