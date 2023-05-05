@@ -65,7 +65,7 @@
         };
         NAVI { bindings = <
             &none         &none         &none         &none          &none            &none            &none            &none            &none        &none          &none           &none
-            &kp ESC       &kp RG(RA(X)) &kp M         &kp UP         &none            &none            &none            &none            &none        &none          &none           &kp DELETE
+            &kp ESC       &kp RG(RA(X)) &kp ESC       &kp UP         &kp M            &none            &none            &none            &none        &none          &none           &kp DELETE
             &none         &kp RG(RA(C)) &kp LEFT      &kp DOWN       &kp RIGHT        &kp RG(RA(S))    &none            &kp RSHIFT       &kp RGUI     &kp RCTRL      &kp RALT        &none
             &none         &kp RG(RA(G)) &kp LC(LEFT)  &kp LC(UP)     &kp LC(RIGHT)    &none            &none            &none            &none        &none          &none           &none
             &none         &none         &none         &none          &none            &none            &none            &none            &trans       &none          &none           &none
