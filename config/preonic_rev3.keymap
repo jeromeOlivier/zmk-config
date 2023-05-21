@@ -44,7 +44,7 @@
             &none         &none           &none         &none          &none            &none            &none            &kp UNDER        &kp LPAR       &kp RPAR              &kp KP_PLUS     &kp DELETE
             &none         &kp LALT        &kp LCTRL     &kp LGUI       &kp LSHIFT       &none            &none            &kp KP_EQUAL     &kp LBKT       &kp RBKT              &kp COLON       &kp DQT
             &none         &none           &none         &none          &none            &none            &none            &kp KP_MINUS     &kp LT         &kp GT                &kp QMARK       &kp PIPE
-            &none         &none           &none         &none          &trans           &trans           &kp SPACE        &kp SPACE        &kp RET        &none                 &kp C_BRI_DN    &kp C_BRI_UP
+            &none         &none           &none         &none          &trans           &trans           &kp SPACE        &kp SPACE        &none          &none                 &kp C_BRI_DN    &kp C_BRI_UP
                 >;
         };
         FUNC { bindings = <
@@ -60,7 +60,7 @@
             &none         &none           &none         &none          &none            &none            &kp RG(RA(X))    &none            &kp UP         &none                 &kp ESC         &kp DELETE
             &none         &kp LALT        &kp LCTRL     &kp LGUI       &kp LSHIFT       &none            &kp RG(RA(C))    &kp LEFT         &kp DOWN       &kp RIGHT             &kp RG(RA(S))   &none
             &none         &none           &none         &none          &none            &none            &kp RG(RA(G))    &kp M            &kp COMMA      &kp DOT               &none           &none
-            &none         &none           &none         &trans         &none            &none            &none            &none            &none          &none                 &none           &none
+            &none         &none           &none         &trans         &none            &none            &none            &none            &kp RET        &none                 &none           &none
                 >;
         };
         NAVI { bindings = <
