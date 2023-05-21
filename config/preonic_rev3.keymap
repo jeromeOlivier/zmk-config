@@ -40,7 +40,7 @@
                 >;
         };
         SMBL { bindings = <
-            &none         &kp EXCL        &kp AT        &kp HASH       &kp DOLLAR       &kp PERCENT      &kp CARET        &kp AMPS         &kp QMARK      &kp PIPE              &kp STAR        &kp BACKSPACE
+            &none         &kp EXCL        &kp AT        &kp HASH       &kp DOLLAR       &kp PERCENT      &kp CARET        &kp AMPS         &kp FSLH       &kp BSLH              &kp STAR        &kp BACKSPACE
             &none         &none           &none         &none          &none            &none            &none            &kp UNDER        &kp LPAR       &kp RPAR              &kp KP_PLUS     &kp DELETE
             &none         &kp LALT        &kp LCTRL     &kp LGUI       &kp LSHIFT       &none            &none            &kp KP_EQUAL     &kp LBKT       &kp RBKT              &kp COLON       &kp DQT
             &none         &none           &none         &none          &none            &none            &none            &kp KP_MINUS     &kp LT         &kp GT                &kp QMARK       &kp PIPE
