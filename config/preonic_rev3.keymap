@@ -68,7 +68,7 @@
             &none         &none           &kp ESC       &kp UP         &kp M            &none            &none            &none            &none          &none                 &none           &kp DELETE
             &none         &none           &kp LEFT      &kp DOWN       &kp RIGHT        &none            &none            &kp RSHIFT       &kp RGUI       &kp RCTRL             &kp RALT        &none
             &none         &none           &kp LC(LEFT)  &kp LC(UP)     &kp LC(RIGHT)    &none            &none            &none            &none          &none                 &none           &none
-            &none         &none           &none         &kp RET        &none            &none            &none            &none            &trans         &none                 &none           &none
+            &none         &none           &none         &kp TAB        &none            &none            &none            &none            &trans         &none                 &none           &none
                 >;
         };
     };
