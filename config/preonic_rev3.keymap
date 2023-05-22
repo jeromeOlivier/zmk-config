@@ -11,7 +11,7 @@
 #define ALFA 0
 #define SMBL 1
 #define FUNC 2
-#define WARP 3
+#define NUMB 3
 #define NAVI 4
 
 / {
@@ -36,7 +36,7 @@
             &kp GRAVE     &kp Q           &kp W         &kp E          &kp R            &kp T            &kp Y            &kp U            &kp I          &kp O                 &kp P           &kp DELETE
             &kp CAPS      &hm LALT A      &hm LCTRL S   &hm LGUI D     &hm LSHIFT F     &kp G            &kp H            &hm RSHIFT J     &hm RGUI K     &hm RCTRL L           &hm RALT SEMI   &kp SQT
             &kp LA(ESC)   &kp Z           &kp X         &kp C          &kp V            &kp B            &kp N            &kp M            &kp COMMA      &kp DOT               &kp FSLH        &kp BSLH
-            &kp LC(F1)    &none           &none         &mo WARP       &mo SMBL         &mo SMBL         &lt FUNC SPACE   &lt FUNC SPACE   &mo NAVI       &kp RS(RC(RA(RGUI)))  &kp C_VOL_DN    &kp C_VOL_UP
+            &kp LC(F1)    &none           &none         &mo WARP       &mo SMBL         &mo SMBL         &lt NUMB SPACE   &lt NUMB SPACE   &mo NAVI       &kp RS(RC(RA(RGUI)))  &kp C_VOL_DN    &kp C_VOL_UP
                 >;
         };
         SMBL { bindings = <
@@ -48,19 +48,19 @@
                 >;
         };
         FUNC { bindings = <
-            &none         &kp EXCL        &kp AT        &kp HASH       &kp DOLLAR       &kp PERCENT      &kp CARET        &kp AMPS         &kp LPAR       &kp RPAR              &kp STAR        &kp BACKSPACE
-            &none         &kp F1          &kp F2        &kp F3         &kp F4           &none            &none            &none            &none          &none                 &none           &kp DELETE
-            &none         &kp F5          &kp F6        &kp F7         &kp F8           &none            &none            &kp RSHIFT       &kp RGUI       &kp RCTRL             &kp RALT        &none
-            &none         &kp F9          &kp F10       &kp F11        &kp F12          &none            &none            &none            &none          &none                 &none           &none
-            &none         &none           &none         &none          &kp TAB          &kp TAB          &trans           &trans           &none          &none                 &none           &none
+            &none         &none           &none         &none          &none            &none            &none            &none            &none          &none                 &none           &kp BACKSPACE
+            &none         &none           &none         &none          &none            &none            &none            &kp F1           &kp F2         &kp F3                &kp F4          &kp DELETE
+            &none         &kp LALT        &kp LCTRL     &kp LGUI       &kp LSHIFT       &none            &none            &kp F5           &kp F6         &kp F7                &kp F8          &none
+            &none         &none           &none         &none          &none            &none            &none            &kp F9           &kp F10        &kp F11               &kp F12         &none
+            &none         &none           &none         &trans         &none            &none            &none            &none            &kp RET        &none                 &none           &none
                 >;
         };
-        WARP { bindings = <
-            &none         &none           &none         &none          &none            &none            &none            &none            &none          &none                 &none           &kp BACKSPACE
-            &none         &none           &none         &none          &none            &none            &kp RG(RA(X))    &none            &kp UP         &none                 &kp ESC         &kp DELETE
-            &none         &kp LALT        &kp LCTRL     &kp LGUI       &kp LSHIFT       &none            &kp RG(RA(C))    &kp LEFT         &kp DOWN       &kp RIGHT             &kp RG(RA(S))   &none
-            &none         &none           &none         &none          &none            &none            &kp RG(RA(G))    &kp M            &kp COMMA      &kp DOT               &none           &none
-            &none         &none           &none         &trans         &none            &none            &none            &none            &kp RET        &none                 &none           &none
+        NUMB { bindings = <
+            &none         &none           &none         &none          &none            &none            &none            &none            &none          &none                 &none           &none
+            &none         &none           &none         &none          &none            &none            &none            &none            &none          &none                 &none           &none
+            &none         &hm LALT N1     &hm LCTRL N2  &hm LGUI N3    &hm LSHIFT N4    &none            &none            &hm RSHIFT N7    &hm RGUI N8    &hm RCTRL N9          &hm RALT N0     &none
+            &none         &none           &none         &none          &kp N5           &none            &none            &kp N6           &none          &none                 &none           &none
+            &none         &none           &none         &none          &none            &none            &trans           &trans           &none          &none                 &none           &none
                 >;
         };
         NAVI { bindings = <
