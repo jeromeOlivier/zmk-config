@@ -24,8 +24,7 @@
             flavor = "tap-preferred";
             bindings = <&kp>, <&kp >;
         };
-    };
-    behaviors {
+
         pm: pinky_mods {
             compatible = "zmk,behavior-hold-tap";
             label = "PINKY_MODS";
@@ -36,7 +35,6 @@
             bindings = <&kp>, <&kp >;
         };
     };
-};
 
     chosen { zmk,matrix_transform = &layout_grid_transform; };
 
