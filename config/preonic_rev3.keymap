@@ -23,7 +23,7 @@
             quick-tap-ms = <125>;
             flavor = "tap-preferred";
             bindings = <&kp>, <&kp >;
-        };
+        },
         pt: pinky_tap {
             compatible = "zmk,behavior-hold-tap";
             label = "PINKY_TAP";
