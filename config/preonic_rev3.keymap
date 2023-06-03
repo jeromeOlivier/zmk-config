@@ -12,7 +12,7 @@
 #define FUNC 1
 #define SYMB 2
 #define NAVI 3
-#define HYPR &kp LCTRL &kp LALT &kp LGUI &kp LSHIFT
+#define HYPR LCTRL(LALT(LGUI(LSHIFT)))
 
 / {
     behaviors {
