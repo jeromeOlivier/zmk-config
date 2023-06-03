@@ -14,9 +14,9 @@
 #define NAVI 3
 
 #define HYPE RS(RC(RA(RGUI)))
-#define HYPU RS(U)
-#define HYPI RS(I)
-#define HYPO RS(O)
+#define HYPU RS(RC(U))
+#define HYPI RS(RC(I))
+#define HYPO RS(RC(O))
 
 / {
     behaviors {
