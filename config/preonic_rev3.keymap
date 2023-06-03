@@ -13,10 +13,10 @@
 #define SYMB 2
 #define NAVI 3
 
-#define HYPE RS(RC(RA(RGUI)))
-#define HYPU RS(RC(RA(RGUI(U))))
-#define HYPI RS(RC(RA(RGUI(I))))
-#define HYPO RS(RC(RA(RGUI(O))))
+#define HYPE RS(RC(RA(RGUI)));
+#define HYPU RS(RC(RA(RGUI(U))));
+#define HYPI RS(RC(RA(RGUI(I))));
+#define HYPO RS(RC(RA(RGUI(O))));
 
 / {
     behaviors {
