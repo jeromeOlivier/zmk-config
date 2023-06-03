@@ -12,6 +12,7 @@
 #define FUNC 1
 #define SYMB 2
 #define NAVI 3
+#define hypr &kp LCTRL &kp LALT &kp LGUI &kp LSHIFT
 
 / {
     behaviors {
@@ -30,7 +31,7 @@
             label = "PINKY_MODS";
             #binding-cells = <2>;
             tapping-term-ms = <200>;
-            quick-tap-ms = <-1>;
+            quick-tap-ms = <125>;
             flavor = "tap-preferred";
             bindings = <&kp>, <&kp >;
         };
