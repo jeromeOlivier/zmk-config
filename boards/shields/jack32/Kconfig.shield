@@ -1,0 +1,2 @@
+config SHIELD_JACK32
+    def_bool $(shields_list_contains,jack32)

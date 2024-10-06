@@ -1,0 +1,22 @@
+// This file was generated from a template. Edit it to match your keyboard.
+// See https://zmk.dev/docs/development/new-shield for more instructions.
+
+#include <behaviors.dtsi>
+#include <dt-bindings/zmk/keys.h>
+
+/ {
+    // Define a default keymap here.
+    // See https://zmk.dev/docs/development/new-shield#default-keymap.
+    keymap {
+        compatible = "zmk,keymap";
+
+        default_layer {
+            bindings = <
+                &kp Q     &kp W     &kp F     &kp P     &kp B     &kp J     &kp L     &kp U     &kp Y     &kp COLON
+                &kp A     &kp R     &kp S     &kp T     &kp G     &kp M     &kp N     &kp E     &kp I     &kp O
+                &kp Z     &kp X     &kp C     &kp D     &kp V     &kp K     &kp H     &kp COMMA &kp DOT   &kp SLASH
+                                                        &kp TAB   &kp SPACE
+            >;
+        };
+    };
+};

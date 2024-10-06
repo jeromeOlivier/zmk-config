@@ -1,0 +1,6 @@
+if SHIELD_JACK32
+
+config ZMK_KEYBOARD_NAME
+    default "jack32"
+
+endif # SHIELD_JACK32
