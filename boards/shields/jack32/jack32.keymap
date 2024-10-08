@@ -1,24 +1,34 @@
-// This file was generated from a template. Edit it to match your keyboard.
-// See https://zmk.dev/docs/development/new-shield for more instructions.
-
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
+#include "jack32_combos.dtsi"
 
 #define ALF 0
 #define NUM 1
 #define NAV 2
 #define FUN 3
 
+ht: hold_tap {
+    compatible = "zmk,behavior-hold-tap";
+    #binding-cells = <2>;
+    flavor = "tap-preferred";
+    tapping-term-ms = <200>;
+    quick-tap-ms = <200>;
+    require-prior-idle-ms = <125>;
+    bindings = <&kp>, <&kp>;
+};
+
+// / {
+    
+// };
+
 / {
-    // Define a default keymap here.
-    // See https://zmk.dev/docs/development/new-shield#default-keymap.
     keymap {
         compatible = "zmk,keymap";
 
         ALF {
             bindings = <
                 &kp Q       &kp W       &kp F       &kp P       &kp B       &kp J       &kp L       &kp U       &kp Y       &kp COLON
-                &kp A       &kp R       &kp S       &kp T       &kp G       &kp M       &kp N       &kp E       &kp I       &kp O
+                &ht LCTRL A &ht LALT R  &ht LCMD S  &ht LSHFT T &kp G       &kp M       &ht RSHFT N &ht RCMD E  &ht RALT I  &ht CTRL O
                 &kp Z       &kp X       &kp C       &lt FUN D   &kp V       &kp K       &kp H       &kp COMMA   &kp DOT     &kp SLASH
                                                                 &mo NUM     &lt NAV SPACE
             >;
@@ -31,9 +41,9 @@
         }
         NAV {
                 &none       &none       &kp UP      &none       &none       &none       &none       &none       &none       &kp BSPC
-                &none       &kp LEFT    &kp DOWN    &kp RIGHT   &none       &kp RSHFT   &kp RCMD    &kp RALT    &kp RCTRL   &none
+                &none       &kp LEFT    &kp DOWN    &kp RIGHT   &none       &none       &kp RSHFT   &kp RCMD    &kp RALT    &kp RCTRL
                 &none       &none       &none       &none       &none       &none       &none       &none       &none       &none
-                                                                &kp TAB     &trans
+                                                                &kp CAPS    &trans
 
         };
         FUN {
