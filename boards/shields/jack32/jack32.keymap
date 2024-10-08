@@ -17,10 +17,6 @@ ht: hold_tap {
     bindings = <&kp>, <&kp>;
 };
 
-// / {
-    
-// };
-
 / {
     keymap {
         compatible = "zmk,keymap";
