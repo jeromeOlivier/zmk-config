@@ -65,7 +65,9 @@ ht: hold_tap {
             bindings = <&kp TAB>;
         };
     };
+};
 
+/ {
     keymap {
         compatible = "zmk,keymap";
 
