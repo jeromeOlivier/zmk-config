@@ -1,6 +1,6 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
-// #include "jack32_combos.dtsi"
+#include <combos.dtsi>
 
 #define ALF 0
 #define NUM 1
@@ -22,55 +22,46 @@ ht: hold_tap {
         compatible = "zmk,combos";
         combo_tilde {
             timeout-ms = <50>;
-            layers = <0>
             key-positions = <0 1>;
             bindings = <&kp TILDE>;
         };
         combo_minus {
             timeout-ms = <50>;
-            layers = <0>
             key-positions = <1 2>;
             bindings = <&kp MINUS>;
         };
         combo_plus {
             timeout-ms = <50>;
-            layers = <0>
             key-positions = <2 3>;
             bindings = <&kp PLUS>;
         };
         combo_grave {
             timeout-ms = <50>;
-            layers = <0>
             key-positions = <5 6>;
             bindings = <&kp GRAVE>;
         };
         combo_underscore {
             timeout-ms = <50>;
-            layers = <0>
             key-positions = <6 7>;
             bindings = <&kp UNDER>;
         };
         combo_equal {
             timeout-ms = <50>;
-            layers = <0>
             key-positions = <7 8>;
             bindings = <&kp EQUAL>;
         };
         combo_less_than {
             timeout-ms = <50>;
-            layers = <0>
             key-positions = <11 12>;
             bindings = <&kp LT>;
         };
         combo_tab {
             timeout-ms = <50>;
-            layers = <0>
             key-positions = <12 13>;
             bindings = <&kp TAB>;
         };
         combo_double_quote {
             timeout-ms = <50>;
-            layers = <0>
             key-positions = <17 18>;
             bindings = <&kp TAB>;
         };
