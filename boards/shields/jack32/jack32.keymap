@@ -1,6 +1,5 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
-#include <combos.dtsi>
 
 #define ALF 0
 #define NUM 1
@@ -87,7 +86,7 @@ ht: hold_tap {
                                                                 &trans      &kp RET
         }
         NAV {
-                &none       &none       &kp UP      &none       &none       &none       &none       &none       &none       &kp BSPC
+                &none       &none       &kp UP      &none       &none       &bootloader &none       &none       &none       &kp BSPC
                 &none       &kp LEFT    &kp DOWN    &kp RIGHT   &none       &none       &kp RSHFT   &kp RCMD    &kp RALT    &kp RCTRL
                 &none       &none       &none       &none       &none       &none       &none       &none       &none       &none
                                                                 &kp CAPS    &trans
