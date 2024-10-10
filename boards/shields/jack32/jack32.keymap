@@ -12,7 +12,6 @@
         
         ht: hold_tap {
             #binding-cells = <2>;
-            label = "HOLD_TAP";
             flavor = "tap-preferred";
             tapping-term-ms = <200>;
             quick-tap-ms = <125>;
