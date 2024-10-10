@@ -7,7 +7,7 @@
 #define FUN 3
 
 / {
-    behavior {
+    behaviors {
         ht: hold_tap {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
