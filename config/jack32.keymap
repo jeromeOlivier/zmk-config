@@ -1,6 +1,3 @@
-// This file was generated from a template. Edit it to match your keyboard.
-// See https://zmk.dev/docs/development/new-shield for more instructions.
-
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
 
@@ -9,44 +6,107 @@
 #define NAV 2
 #define FUN 3
 
+ht: hold_tap {
+    compatible = "zmk,behavior-hold-tap";
+    #binding-cells = <2>;
+    flavor = "tap-preferred";
+    tapping-term-ms = <200>;
+    quick-tap-ms = <200>;
+    require-prior-idle-ms = <125>;
+    bindings = <&kp>, <&kp>;
+};
+
 / {
-    // Define a default keymap here.
-    // See https://zmk.dev/docs/development/new-shield#default-keymap.
+    combos {
+        compatible = "zmk,combos";
+
+        combo_tilde {
+            timeout-ms = <50>;
+            key-positions = <0 1>;
+            bindings = <&kp TILDE>;
+        };
+
+        combo_minus {
+            timeout-ms = <50>;
+            key-positions = <1 2>;
+            bindings = <&kp MINUS>;
+        };
+
+        combo_plus {
+            timeout-ms = <50>;
+            key-positions = <2 3>;
+            bindings = <&kp PLUS>;
+        };
+
+        combo_grave {
+            timeout-ms = <50>;
+            key-positions = <5 6>;
+            bindings = <&kp GRAVE>;
+        };
+
+        combo_underscore {
+            timeout-ms = <50>;
+            key-positions = <6 7>;
+            bindings = <&kp UNDER>;
+        };
+
+        combo_equal {
+            timeout-ms = <50>;
+            key-positions = <7 8>;
+            bindings = <&kp EQUAL>;
+        };
+
+        combo_less_than {
+            timeout-ms = <50>;
+            key-positions = <11 12>;
+            bindings = <&kp LT>;
+        };
+
+        combo_tab {
+            timeout-ms = <50>;
+            key-positions = <12 13>;
+            bindings = <&kp TAB>;
+        };
+
+        combo_double_quote {
+            timeout-ms = <50>;
+            key-positions = <17 18>;
+            bindings = <&kp TAB>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
         ALF {
             bindings = <
                 &kp Q       &kp W       &kp F       &kp P       &kp B       &kp J       &kp L       &kp U       &kp Y       &kp COLON
-                &kp A       &kp R       &kp S       &kp T       &kp G       &kp M       &kp N       &kp E       &kp I       &kp O
+                &ht LCTRL A &ht LALT R  &ht LCMD S  &ht LSHFT T &kp G       &kp M       &ht RSHFT N &ht RCMD E  &ht RALT I  &ht CTRL O
                 &kp Z       &kp X       &kp C       &lt FUN D   &kp V       &kp K       &kp H       &kp COMMA   &kp DOT     &kp SLASH
                                                                 &mo NUM     &lt NAV SPACE
             >;
         };
+
         NUM {
-            bindings = <
                 &none       &none       &none       &none       &none       &none       &kp N1      &kp N2      &kp N3      &kp BSPC
                 &kp LCTRL   &kp LALT    &kp LCMD    &kp LSHFT   &none       &none       &kp N4      &kp N5      &kp N6      &kp N0
                 &none       &none       &none       &none       &none       &none       &kp N7      &kp N8      &kp N9      &kp DEL
                                                                 &trans      &kp RET
-            >;
         };
+
         NAV {
-            bindings = <
-                &none       &none       &kp UP      &none       &none       &none       &none       &none       &none       &kp BSPC
-                &none       &kp LEFT    &kp DOWN    &kp RIGHT   &none       &kp RSHFT   &kp RCMD    &kp RALT    &kp RCTRL   &none
+                &none       &none       &kp UP      &none       &none       &bootloader &none       &none       &none       &kp BSPC
+                &none       &kp LEFT    &kp DOWN    &kp RIGHT   &none       &none       &kp RSHFT   &kp RCMD    &kp RALT    &kp RCTRL
                 &none       &none       &none       &none       &none       &none       &none       &none       &none       &none
-                                                                &kp TAB     &trans
-            >;
+                                                                &kp CAPS    &trans
 
         };
+
         FUN {
-            bindings = <
                 &none       &none       &none       &none       &none       &kp J       &kp F1      &kp F2      &kp F3      &kp F4
                 &kp LCTRL   &kp LALT    &kp LCMD    &kp LSHFT   &none       &kp M       &kp F5      &kp F6      &kp F7      &kp F8
                 &none       &none       &none       &trans      &kp V       &kp K       &kp F9      &kp F10     &kp F11     &kp F12
                                                                 &kp TAB     &kp SPC
-            >;
         };
     };
 };
