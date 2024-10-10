@@ -85,7 +85,7 @@
         ALF {
             bindings = <
                 &kp Q       &kp W       &kp F       &kp P       &kp B       &kp J       &kp L       &kp U       &kp Y       &kp COLON
-                &ht LCTRL A &ht LALT R  &ht LCMD S  &ht LSHFT T &kp G       &kp M       &ht RSHFT N &ht RCMD E  &ht RALT I  &ht CTRL O
+                &ht LCTRL A &ht LALT R  &ht LCMD S  &ht LSHFT T &kp G       &kp M       &ht RSHFT N &ht RCMD E  &ht RALT I  &ht RCTRL O
                 &kp Z       &kp X       &kp C       &lt FUN D   &kp V       &kp K       &kp H       &kp COMMA   &kp DOT     &kp SLASH
                                                                 &mo NUM     &lt NAV SPACE
             >;
