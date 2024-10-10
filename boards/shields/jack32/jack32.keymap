@@ -8,8 +8,9 @@
 
 / {
     behaviors {
+        compatible = "zmk,behavior-hold-tap";
+        
         ht: hold_tap {
-            compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             label = "HOLD_TAP";
             flavor = "tap-preferred";
@@ -18,9 +19,7 @@
             bindings = <&kp>, <&kp>;
         };
     };
-};
 
-/ {
     combos {
         compatible = "zmk,combos";
 
@@ -82,8 +81,7 @@
     keymap {
         compatible = "zmk,keymap";
 
-        ALF {
-            bindings = <
+        ALF { bindings = <
                 &kp Q       &kp W       &kp F       &kp P       &kp B       &kp J       &kp L       &kp U       &kp Y       &kp COLON
                 &ht LCTRL A &ht LALT R  &ht LCMD S  &ht LSHFT T &kp G       &kp M       &ht RSHFT N &ht RCMD E  &ht RALT I  &ht RCTRL O
                 &kp Z       &kp X       &kp C       &lt FUN D   &kp V       &kp K       &kp H       &kp COMMA   &kp DOT     &kp SLASH
@@ -91,8 +89,7 @@
             >;
         };
 
-        NUM {
-            bindings = <
+        NUM { bindings = <
                 &none       &none       &none       &none       &none       &none       &kp N1      &kp N2      &kp N3      &kp BSPC
                 &kp LCTRL   &kp LALT    &kp LCMD    &kp LSHFT   &none       &none       &kp N4      &kp N5      &kp N6      &kp N0
                 &none       &none       &none       &none       &none       &none       &kp N7      &kp N8      &kp N9      &kp DEL
@@ -100,8 +97,7 @@
             >;
         };
 
-        NAV {
-            bindings = <
+        NAV { bindings = <
                 &none       &none       &kp UP      &none       &none       &bootloader &none       &none       &none       &kp BSPC
                 &none       &kp LEFT    &kp DOWN    &kp RIGHT   &none       &none       &kp RSHFT   &kp RCMD    &kp RALT    &kp RCTRL
                 &none       &none       &none       &none       &none       &none       &none       &none       &none       &none
@@ -109,8 +105,7 @@
             >;
         };
 
-        FUN {
-            bindings = <
+        FUN { bindings = <
                 &none       &none       &none       &none       &none       &kp J       &kp F1      &kp F2      &kp F3      &kp F4
                 &kp LCTRL   &kp LALT    &kp LCMD    &kp LSHFT   &none       &kp M       &kp F5      &kp F6      &kp F7      &kp F8
                 &none       &none       &none       &trans      &kp V       &kp K       &kp F9      &kp F10     &kp F11     &kp F12
