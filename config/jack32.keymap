@@ -25,56 +25,142 @@
         combo_tilde {
             timeout-ms = <50>;
             key-positions = <0 1>;
+            layers = <0>;
             bindings = <&kp TILDE>;
         };
 
         combo_minus {
             timeout-ms = <50>;
             key-positions = <1 2>;
+            layers = <0>;
             bindings = <&kp MINUS>;
         };
 
         combo_plus {
             timeout-ms = <50>;
             key-positions = <2 3>;
+            layers = <0>;
             bindings = <&kp PLUS>;
         };
 
+        combo_double_quote {
+            timeout-ms = <50>;
+            key-positions = <6 7>;
+            layers = <0>;
+            bindings = <&kp DQT>;
+        };
+
+        combo_backslash {
+            timeout-ms = <50>;
+            key-positions = <7 8>;
+            layers = <0>;
+            bindings = <&kp BSLH>;
+        }
+
         combo_grave {
             timeout-ms = <50>;
-            key-positions = <5 6>;
+            key-positions = <10 11>;
+            layers = <0>;
             bindings = <&kp GRAVE>;
         };
 
         combo_underscore {
             timeout-ms = <50>;
-            key-positions = <6 7>;
+            key-positions = <11 12>;
+            layers = <0>;
             bindings = <&kp UNDER>;
         };
 
         combo_equal {
             timeout-ms = <50>;
-            key-positions = <7 8>;
+            key-positions = <12 13>;
+            layers = <0>;
             bindings = <&kp EQUAL>;
+        };
+
+        combo_single_quote {
+            timeout-ms = <50>;
+            key-positions = <16 17>;
+            layers = <0>;
+            bindings = <&kp SQT>;
+        };
+
+        combo_pipe {
+            timeout-ms = <50>;
+            key-positions = <17 18>;
+            layers = <0>;
+            bindings = <&kp PIPE>;
         };
 
         combo_less_than {
             timeout-ms = <50>;
-            key-positions = <11 12>;
+            key-positions = <21 22>;
+            layers = <0>;
             bindings = <&kp LT>;
         };
 
         combo_tab {
             timeout-ms = <50>;
-            key-positions = <12 13>;
+            key-positions = <22 23>;
+            layers = <0>;
             bindings = <&kp TAB>;
         };
 
-        combo_double_quote {
+        combo_space {
             timeout-ms = <50>;
-            key-positions = <17 18>;
-            bindings = <&kp TAB>;
+            key-positions = <26 27>;
+            layers = <0>;
+            bindings = <&kp SPACE>;
         };
+
+        combo_greater_than {
+            timeout-ms = <50>;
+            key-positions = <27 28>;
+            layers = <0>;
+            bindings = <&kp GT>;
+        };
+
+        combo_left_bracket {
+            timeout-ms = <50>;
+            key-positions = <33 20>;
+            layers = <0>;
+            bindings = <&kp LBKT>;
+        }
+
+        combo_left_brace {
+            timeout-ms = <50>;
+            key-positions = <33 21>;
+            layers = <0>;
+            bindings = <&kp LBRC>;
+        }
+
+        combo_left_parenthesis {
+            timeout-ms = <50>;
+            key-positions = <33 22>;
+            layers = <0>;
+            bindings = <&kp LPAR>;
+        }
+
+        combo_right_parenthesis {
+            timeout-ms = <50>;
+            key-positions = <36 27>;
+            layers = <0>;
+            bindings = <&kp RPAR>;
+        }
+
+        combo_right_brace {
+            timeout-ms = <50>;
+            key-positions = <36 28>;
+            layers = <0>;
+            bindings = <&kp RBRC>;
+        }
+
+        combo_right_bracket {
+            timeout-ms = <50>;
+            key-positions = <36 29>;
+            layers = <0>;
+            bindings = <&kp RBKT>;
+        }
     };
 
     keymap {
