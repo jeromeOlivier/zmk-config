@@ -113,6 +113,20 @@
             bindings = <&kp SPACE>;
         };
 
+        combo_comma {
+            timeout-ms = <50>;
+            key-positions = <26 27>;
+            layers = <1>;
+            bindings = <&kp COMMA>;
+        };
+
+        combo_dot {
+            timeout-ms = <50>;
+            key-positions = <27 28>;
+            layers = <1>;
+            bindings = <&kp DOT>;
+        };
+
         combo_greater_than {
             timeout-ms = <50>;
             key-positions = <27 28>;
@@ -175,7 +189,7 @@
         };
 
         NUM { bindings = <
-                &none       &none       &none       &none       &none       &none       &kp N1      &kp N2      &kp N3      &kp BSPC
+                &kp ESC     &none       &none       &none       &none       &none       &kp N1      &kp N2      &kp N3      &kp BSPC
                 &kp LCTRL   &kp LALT    &kp LCMD    &kp LSHFT   &none       &none       &kp N4      &kp N5      &kp N6      &kp N0
                 &none       &none       &none       &none       &none       &none       &kp N7      &kp N8      &kp N9      &kp DEL
                                                                 &trans      &kp RET
@@ -183,7 +197,7 @@
         };
 
         NAV { bindings = <
-                &none       &none       &kp UP      &none       &none       &bootloader &none       &none       &none       &kp BSPC
+                &kp ESC     &none       &kp UP      &none       &none       &bootloader &none       &none       &none       &kp BSPC
                 &none       &kp LEFT    &kp DOWN    &kp RIGHT   &none       &none       &kp RSHFT   &kp RCMD    &kp RALT    &kp RCTRL
                 &none       &none       &none       &none       &none       &none       &none       &none       &none       &none
                                                                 &kp CAPS    &trans
@@ -191,9 +205,9 @@
         };
 
         FUN { bindings = <
-                &none       &none       &none       &none       &none       &kp J       &kp F1      &kp F2      &kp F3      &kp F4
-                &kp LCTRL   &kp LALT    &kp LCMD    &kp LSHFT   &none       &kp M       &kp F5      &kp F6      &kp F7      &kp F8
-                &none       &none       &none       &trans      &kp V       &kp K       &kp F9      &kp F10     &kp F11     &kp F12
+                &none       &none       &none       &none       &none       &none       &kp F1      &kp F2      &kp F3      &kp F4
+                &kp LCTRL   &kp LALT    &kp LCMD    &kp LSHFT   &none       &none       &kp F5      &kp F6      &kp F7      &kp F8
+                &none       &none       &none       &trans      &none       &none       &kp F9      &kp F10     &kp F11     &kp F12
                                                                 &kp TAB     &kp SPC
             >;
         };
