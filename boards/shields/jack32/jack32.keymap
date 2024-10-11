@@ -175,6 +175,13 @@
             layers = <0>;
             bindings = <&kp RBKT>;
         };
+
+        combo_bootloader {
+            timeout-ms = <50>;
+            key-positions = <04 05>;
+            layers = <2>;
+            bindings = <&bootloader>;
+        }
     };
 
     keymap {
@@ -197,7 +204,7 @@
         };
 
         NAV { bindings = <
-                &kp ESC     &none       &kp UP      &none       &none       &bootloader &none       &none       &none       &kp BSPC
+                &kp ESC     &none       &kp UP      &none       &none       &none       &none       &none       &none       &kp BSPC
                 &none       &kp LEFT    &kp DOWN    &kp RIGHT   &none       &none       &kp RSHFT   &kp RCMD    &kp RALT    &kp RCTRL
                 &none       &none       &none       &none       &none       &none       &none       &none       &none       &none
                                                                 &kp CAPS    &trans
