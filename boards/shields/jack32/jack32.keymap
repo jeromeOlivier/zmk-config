@@ -122,42 +122,42 @@
 
         combo_left_bracket {
             timeout-ms = <50>;
-            key-positions = <33 20>;
+            key-positions = <23 10>;
             layers = <0>;
             bindings = <&kp LBKT>;
         };
 
         combo_left_brace {
             timeout-ms = <50>;
-            key-positions = <33 21>;
+            key-positions = <23 11>;
             layers = <0>;
             bindings = <&kp LBRC>;
         };
 
         combo_left_parenthesis {
             timeout-ms = <50>;
-            key-positions = <33 22>;
+            key-positions = <23 12>;
             layers = <0>;
             bindings = <&kp LPAR>;
         };
 
         combo_right_parenthesis {
             timeout-ms = <50>;
-            key-positions = <36 27>;
+            key-positions = <26 17>;
             layers = <0>;
             bindings = <&kp RPAR>;
         };
 
         combo_right_brace {
             timeout-ms = <50>;
-            key-positions = <36 28>;
+            key-positions = <26 18>;
             layers = <0>;
             bindings = <&kp RBRC>;
         };
 
         combo_right_bracket {
             timeout-ms = <50>;
-            key-positions = <36 29>;
+            key-positions = <26 19>;
             layers = <0>;
             bindings = <&kp RBKT>;
         };
@@ -167,7 +167,7 @@
         compatible = "zmk,keymap";
 
         ALF { bindings = <
-                &kp Q       &kp W       &kp F       &kp P       &kp B       &kp J       &kp L       &kp U       &kp Y       &kp COLON
+                &kp Q       &kp W       &kp F       &kp P       &kp B       &kp J       &kp L       &kp U       &kp Y       &kp SEMI
                 &ht LCTRL A &ht LALT R  &ht LCMD S  &ht LSHFT T &kp G       &kp M       &ht RSHFT N &ht RCMD E  &ht RALT I  &ht RCTRL O
                 &kp Z       &kp X       &kp C       &lt FUN D   &kp V       &kp K       &kp H       &kp COMMA   &kp DOT     &kp SLASH
                                                                 &mo NUM     &lt NAV SPACE
