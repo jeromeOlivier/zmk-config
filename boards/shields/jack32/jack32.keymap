@@ -55,7 +55,7 @@
             key-positions = <7 8>;
             layers = <0>;
             bindings = <&kp BSLH>;
-        }
+        };
 
         combo_grave {
             timeout-ms = <50>;
@@ -125,42 +125,42 @@
             key-positions = <33 20>;
             layers = <0>;
             bindings = <&kp LBKT>;
-        }
+        };
 
         combo_left_brace {
             timeout-ms = <50>;
             key-positions = <33 21>;
             layers = <0>;
             bindings = <&kp LBRC>;
-        }
+        };
 
         combo_left_parenthesis {
             timeout-ms = <50>;
             key-positions = <33 22>;
             layers = <0>;
             bindings = <&kp LPAR>;
-        }
+        };
 
         combo_right_parenthesis {
             timeout-ms = <50>;
             key-positions = <36 27>;
             layers = <0>;
             bindings = <&kp RPAR>;
-        }
+        };
 
         combo_right_brace {
             timeout-ms = <50>;
             key-positions = <36 28>;
             layers = <0>;
             bindings = <&kp RBRC>;
-        }
+        };
 
         combo_right_bracket {
             timeout-ms = <50>;
             key-positions = <36 29>;
             layers = <0>;
             bindings = <&kp RBKT>;
-        }
+        };
     };
 
     keymap {
