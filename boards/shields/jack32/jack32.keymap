@@ -181,7 +181,7 @@
             key-positions = <04 05>;
             layers = <2>;
             bindings = <&bootloader>;
-        }
+        };
     };
 
     keymap {
