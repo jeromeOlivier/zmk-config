@@ -159,7 +159,7 @@
             key-positions = <14 15>;
             layers = <2>;
             bindings = <&sys_reset>;
-        }
+        };
     };
 
     keymap {
