@@ -72,12 +72,12 @@
             bindings = <&kp LT>;
         };
 
-        combo_tab {
-            timeout-ms = <50>;
-            key-positions = <22 23>;
-            layers = <0>;
-            bindings = <&kp TAB>;
-        };
+        // combo_tab {
+        //     timeout-ms = <50>;
+        //     key-positions = <22 23>;
+        //     layers = <0>;
+        //     bindings = <&kp TAB>;
+        // };
 
         combo_space {
             timeout-ms = <50>;
@@ -184,7 +184,7 @@
 
         NAV { bindings = <
                 &kp ESC     &none       &kp UP      &none       &none       &none       &none       &none       &none       &backdel
-                &none       &kp LEFT    &kp DOWN    &kp RIGHT   &none       &none       &kp RSHFT   &kp RCMD    &kp RALT    &kp RCTRL
+                &kp TAB     &kp LEFT    &kp DOWN    &kp RIGHT   &none       &none       &kp RSHFT   &kp RCMD    &kp RALT    &kp RCTRL
                 &bt BT_CLR  &bt BT_PRV  &bt BT_NXT  &none       &none       &none       &none       &none       &none       &kp RET
                                                                 &kp CAPS    &trans
             >;
