@@ -17,6 +17,13 @@
             quick-tap-ms = <125>;
             bindings = <&kp>, <&kp>;
         };
+
+        backdel: BACKSPACE_DELETE {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp BACKSPACE>, <&kp DELETE>;
+            mods = <(MOD_LSFT)>;
+        };
     };
 
     combos {
@@ -156,22 +163,22 @@
                 &kp Q       &kp W       &kp F       &kp P       &kp B       &kp J       &kp L       &kp U       &kp Y       &kp SEMI
                 &ht LCTRL A &ht LALT R  &ht LCMD S  &ht LSHFT T &kp G       &kp M       &ht RSHFT N &ht RCMD E  &ht RALT I  &ht RCTRL O
                 &kp Z       &kp X       &kp C       &lt FUN D   &kp V       &kp K       &kp H       &kp COMMA   &kp DOT     &kp SLASH
-                                                                &mo NUM     &lt NAV SPACE
+                                                                &lt NUM TAB &lt NAV SPC
             >;
         };
 
         NUM { bindings = <
-                &kp ESC     &none       &none       &none       &none       &none       &kp N1      &kp N2      &kp N3      &kp BSPC
+                &kp ESC     &none       &none       &none       &none       &none       &kp N1      &kp N2      &kp N3      &backdel
                 &kp LCTRL   &kp LALT    &kp LCMD    &kp LSHFT   &none       &none       &kp N4      &kp N5      &kp N6      &kp N0
-                &none       &none       &none       &none       &none       &none       &kp N7      &kp N8      &kp N9      &kp DEL
-                                                                &trans      &kp RET
+                &none       &none       &none       &none       &none       &none       &kp N7      &kp N8      &kp N9      &kp RET
+                                                                &trans      &kp SPC
             >;
         };
 
         NAV { bindings = <
-                &kp ESC     &none       &kp UP      &none       &none       &none       &none       &none       &none       &kp BSPC
+                &kp ESC     &none       &kp UP      &none       &none       &none       &none       &none       &none       &backdel
                 &none       &kp LEFT    &kp DOWN    &kp RIGHT   &none       &none       &kp RSHFT   &kp RCMD    &kp RALT    &kp RCTRL
-                &none       &none       &none       &none       &none       &none       &none       &none       &none       &kp DEL
+                &none       &none       &none       &none       &none       &none       &none       &none       &none       &none
                                                                 &kp CAPS    &trans
             >;
         };
@@ -180,7 +187,7 @@
                 &none       &none       &none       &none       &none       &none       &kp F1      &kp F2      &kp F3      &kp F4
                 &kp LCTRL   &kp LALT    &kp LCMD    &kp LSHFT   &none       &none       &kp F5      &kp F6      &kp F7      &kp F8
                 &none       &none       &none       &trans      &none       &none       &kp F9      &kp F10     &kp F11     &kp F12
-                                                                &kp TAB     &kp SPC
+                                                                &none       &kp SPC
             >;
         };
     };
