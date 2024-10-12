@@ -154,6 +154,12 @@
             layers = <2>;
             bindings = <&bootloader>;
         };
+        combo_reset {
+            timeout-ms = <50>;
+            key-positions = <14 15>;
+            layers = <2>;
+            bindings = <&sys_reset>;
+        }
     };
 
     keymap {
@@ -168,17 +174,17 @@
         };
 
         NUM { bindings = <
-                &kp ESC     &none       &none       &none       &none       &none       &kp N1      &kp N2      &kp N3      &kp BSPC
+                &kp ESC     &none       &none       &none       &none       &none       &kp N1      &kp N2      &kp N3      &backdel
                 &kp LCTRL   &kp LALT    &kp LCMD    &kp LSHFT   &none       &none       &kp N4      &kp N5      &kp N6      &kp N0
-                &none       &none       &none       &none       &none       &kp RET     &kp N7      &kp N8      &kp N9      &kp DEL
+                &none       &none       &none       &none       &none       &none       &kp N7      &kp N8      &kp N9      &none
                                                                 &trans      &kp SPC
             >;
         };
 
         NAV { bindings = <
-                &kp ESC     &none       &kp UP      &none       &none       &none       &none       &none       &none       &kp BSPC
+                &kp ESC     &none       &kp UP      &none       &none       &none       &none       &none       &none       &backdel
                 &none       &kp LEFT    &kp DOWN    &kp RIGHT   &none       &none       &kp RSHFT   &kp RCMD    &kp RALT    &kp RCTRL
-                &none       &none       &none       &none       &none       &kp RET     &none       &none       &none       &kp DEL
+                &none       &none       &none       &none       &none       &none       &none       &none       &none       &kp RET
                                                                 &kp CAPS    &trans
             >;
         };
