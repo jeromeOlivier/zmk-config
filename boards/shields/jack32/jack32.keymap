@@ -31,6 +31,7 @@
     combos {
         compatible = "zmk,combos";
 
+        // left hand
         combo_tilde {
             timeout-ms = <50>;
             key-positions = <0 1>;
@@ -52,46 +53,11 @@
             bindings = <&kp EQUAL>;
         };
 
-        combo_double_quote {
-            timeout-ms = <50>;
-            key-positions = <6 7>;
-            layers = <0>;
-            bindings = <&kp SQT>;
-        };
-
-        combo_backslash {
-            timeout-ms = <50>;
-            key-positions = <7 8>;
-            layers = <0>;
-            bindings = <&kp BSLH>;
-        };
-
         combo_less_than {
             timeout-ms = <50>;
             key-positions = <21 22>;
             layers = <0>;
             bindings = <&kp LT>;
-        };
-
-        combo_comma {
-            timeout-ms = <50>;
-            key-positions = <26 27>;
-            layers = <1>;
-            bindings = <&kp COMMA>;
-        };
-
-        combo_dot {
-            timeout-ms = <50>;
-            key-positions = <27 28>;
-            layers = <1>;
-            bindings = <&kp DOT>;
-        };
-
-        combo_greater_than {
-            timeout-ms = <50>;
-            key-positions = <27 28>;
-            layers = <0>;
-            bindings = <&kp GT>;
         };
 
         combo_left_bracket {
@@ -115,6 +81,28 @@
             bindings = <&kp LPAR>;
         };
 
+        // right hand
+        combo_double_quote {
+            timeout-ms = <50>;
+            key-positions = <6 7>;
+            layers = <0>;
+            bindings = <&kp SQT>;
+        };
+
+        combo_backslash {
+            timeout-ms = <50>;
+            key-positions = <7 8>;
+            layers = <0>;
+            bindings = <&kp BSLH>;
+        };
+
+        combo_greater_than {
+            timeout-ms = <50>;
+            key-positions = <27 28>;
+            layers = <0>;
+            bindings = <&kp GT>;
+        };
+
         combo_right_parenthesis {
             timeout-ms = <50>;
             key-positions = <26 17>;
@@ -136,6 +124,28 @@
             bindings = <&kp RBKT>;
         };
 
+        combo_space {
+            timeout-ms = <50>;
+            key-positions = <26 27>;
+            layers = <0>;
+            bindings = <&kp SPC>;
+        };
+
+        combo_comma {
+            timeout-ms = <50>;
+            key-positions = <26 27>;
+            layers = <1>;
+            bindings = <&kp COMMA>;
+        };
+
+        combo_dot {
+            timeout-ms = <50>;
+            key-positions = <27 28>;
+            layers = <1>;
+            bindings = <&kp DOT>;
+        };
+
+        // both hands
         combo_bootloader {
             timeout-ms = <50>;
             key-positions = <0 9>;
