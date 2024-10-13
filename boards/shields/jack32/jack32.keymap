@@ -42,7 +42,7 @@
             timeout-ms = <50>;
             key-positions = <1 2>;
             layers = <0>;
-            bindings = <&kp UNDER>;
+            bindings = <&kp MINUS>;
         };
 
         combo_plus {
@@ -71,20 +71,6 @@
             key-positions = <21 22>;
             layers = <0>;
             bindings = <&kp LT>;
-        };
-
-        // combo_tab {
-        //     timeout-ms = <50>;
-        //     key-positions = <22 23>;
-        //     layers = <0>;
-        //     bindings = <&kp TAB>;
-        // };
-
-        combo_space {
-            timeout-ms = <50>;
-            key-positions = <26 27>;
-            layers = <0>;
-            bindings = <&kp SPACE>;
         };
 
         combo_comma {
@@ -152,14 +138,14 @@
 
         combo_bootloader {
             timeout-ms = <50>;
-            key-positions = <4 5>;
-            layers = <2>;
+            key-positions = <0 9>;
+            layers = <4>;
             bindings = <&bootloader>;
         };
         combo_reset {
             timeout-ms = <50>;
-            key-positions = <14 15>;
-            layers = <2>;
+            key-positions = <20 29>;
+            layers = <4>;
             bindings = <&sys_reset>;
         };
     };
@@ -201,7 +187,7 @@
         BLU { bindings = <
                 &none       &none       &none       &none       &bt BT_CLR  &none       &none       &none       &none       &none
                 &none       &none       &none       &none       &bt BT_PRV  &none       &none       &none       &none       &none
-                &none       &none       &none       &none       &bt BT_NXT  &none       &none       &none       &none       &none
+                &none       &none       &none       &none       &bt BT_NXT  &none       &trans      &none       &none       &none
                                                                 &none       &none
             >;
         };
